@@ -35,22 +35,20 @@ form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 
     width: 60%;
     height: 10%;
     display: flex;
-    /* justify-self: center; */
 }
 
-.overlay form input {
+#chatUsername:focus {
+    background-color: #ffffff;
+    outline: thin;
+  }
+
+#chatUsername {
+    background-color: transparent;
+    width: 60%;
     margin: auto;
     height: 100%;
     text-align: center;
     font-size: x-large;
     border-radius: 10px;
     border-style: dashed;
-}
-
-#chatUsername {
-    background: transparent;
-    width: 60%;
-    /* margin-top: 50%;
-    margin-left: 50%; */
-    /* margin: auto; */
 }

@@ -1,4 +1,6 @@
-$(function() {
+$(function() { //same as $(document).ready(function() {})
+    $('#intro').fadeIn(1000);
+    $('#chatUsername').delay(1000).fadeIn(1000);
     var socket = io();  //This is what fires all the events
     $('form').submit(function(e) {
         e.preventDefault();
