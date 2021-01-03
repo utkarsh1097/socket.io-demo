@@ -43,6 +43,7 @@ form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 
   }
 
 #chatUsername {
+    /* top: 200px; TODO: Try out fadeIn + box movement animation */
     background-color: transparent;
     width: 60%;
     margin: auto;

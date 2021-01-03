@@ -27,7 +27,8 @@ io.on('connection', (socket) => {
     socket.on('join room', (username) => {
         socket.username = username;
         totalUsers++;
-        socket.broadcast.emit('chat message', `User ${socket.username} just joined.`);
+        console.log(`Username ${socket.username} just joined!`)
+        // socket.broadcast.emit('chat message', `User ${socket.username} just joined.`);
     });
     
     socket.on('disconnect', () => {     //"disconnect" event fired when user disconnects
