@@ -1,8 +1,56 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font: 13px Helvetica, Arial; }
 form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
 form input { border: 0; padding: 10px; width: 90%; margin-right: 0.5%; }
 form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
 #messages { list-style-type: none; margin: 0; padding: 0; }
 #messages li { padding: 5px 10px; }
-#messages li:nth-child(odd) { background: #eee; }
+#messages li:nth-child(odd) { background: #eee; } */
+
+/* By default your html and body elements are only as high as the actual page content */
+/* https://makandracards.com/makandra/39473-stretching-an-html-page-to-full-height */
+/* https://stackoverflow.com/questions/6654958/make-body-have-100-of-the-browser-height */
+/* html, body {
+    height: 100%;
+} */
+
+
+/* Aligning items in a flex container: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container */
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #115276;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#intro {
+    text-align: center;
+}
+
+.overlay form {
+    width: 60%;
+    height: 10%;
+    display: flex;
+    /* justify-self: center; */
+}
+
+.overlay form input {
+    margin: auto;
+    height: 100%;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 10px;
+    border-style: dashed;
+}
+
+#chatUsername {
+    background: transparent;
+    width: 60%;
+    /* margin-top: 50%;
+    margin-left: 50%; */
+    /* margin: auto; */
+}
